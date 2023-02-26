@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@500&display=swap');
+
+body {
+    font-family: Phudu, sans-serif;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    font-family: Phudu, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(0, 21, 141);
+}
+
+.hometitle {
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: 2.5px solid white;
+    padding: 10px;
+    box-shadow: -5px 5px 10px rgb(255, 255, 255), 5px 5px 10px rgb(255, 255, 255);
+}
+  
+.hometitle:hover {
+    background-color: green;
+    transition: 0.5s;
+}
+
+/* ---------- a links ---------- */
+
+a {
+    text-decoration: none;
+}
+
+/* ---------- Containers ---------- */
+
+.container {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.box {
+	background-color: #f1f1f1;
+    height: 50vh;
+    padding: 25px;
+}
