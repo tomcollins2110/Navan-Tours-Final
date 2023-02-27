@@ -19,11 +19,12 @@ header {
     font-size: 32px;
     font-weight: bold;
     margin: 15px auto;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 15px;
     background-color: rgb(0, 21, 141);
     width: 50%;
     background: linear-gradient(to left, rgba(0, 21, 141, 1) 75%, rgba(0, 21, 141, 0) 100%);
+    border-radius: 10px;
 }
 
 .hometitle {
@@ -40,46 +41,7 @@ header {
     transition: 0.5s;
 }
 
-/* ---------- a links ---------- */
-
-a {
-    text-decoration: none;
-}
-
-.gold {
-    color: gold;
-}
-
-/* ---------- Containers ---------- */
-
-.container {
-    background-color: rgb(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-}
-
-.box {
-	background-color: rgb(255, 255, 255,0.3);
-    height: 50vh;
-    width: 75%;
-    padding: 25px;
-    display: inline-block;
-}
-
-    @media (max-width: 768px) {
-    .box {
-        font-size: 0.8em;
-        max-height: 100vh;
-        width: 90%;
-        overflow-y: scroll;
-    }
-}
-
-/* ---------- Containers ---------- */
+/* ---------- Menu ---------- */
 
 .menu {
     display: flex;
@@ -92,6 +54,7 @@ a {
     font-size: 24px;
     font-weight: bold;
     margin: 15px;
+    margin-top: 0;
     border: 2.5px solid white;
     border-radius: 10px;
     padding: 10px;
@@ -106,6 +69,46 @@ a {
     transition: 0.5s;
 }
 
+/* ---------- a links ---------- */
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+.gold {
+    color: gold;
+}
+
+/* ---------- Containers ---------- */
+
+.container {
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.box {
+    height: 50vh;
+    width: 75%;
+    padding: 25px;
+    padding-bottom:25px;
+    display: inline-block;
+}
+
+    @media (max-width: 768px) {
+    .box {
+        font-size: 0.8em;
+        max-height: 100vh;
+        width: 90%;
+    }
+}
+
 /* ---------- Writings ---------- */
 
 h2 {
@@ -114,8 +117,64 @@ h2 {
 
 p {
     color: white;
+    background-color: rgb(0, 0, 0, 0.7);
     text-align: center;
     word-spacing: 10px;
     font-size: 1.2em;
     letter-spacing: 1px;
+    border-radius: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* ----------Form ---------- */
+
+form {
+    background-color: #0077be;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    margin-right: 15px;
+  }
+  
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: #fff;
+    background-color: transparent; 
+}
+
+button[type="submit"] {
+    background-color: rgb(0, 21, 141);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(0, 31, 191);
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 25px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
 }
