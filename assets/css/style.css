@@ -81,12 +81,14 @@ a {
 
 .gold {
     color: gold;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* ---------- Containers ---------- */
 
 .container {
-    background-color: rgb(0, 0, 0, 0.2);
+    background-color: rgb(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,7 +126,7 @@ p {
     color: white;
     background-color: rgb(0, 0, 0, 0.7);
     text-align: center;
-    word-spacing: 10px;
+    word-spacing: 5px;
     font-size: 1.2em;
     letter-spacing: 1px;
     border-radius: 15px;
@@ -132,21 +134,68 @@ p {
     padding-bottom: 25px;
 }
 
-/* ----------Form ---------- */
-
-
-
 /* ---------- Footer ---------- */
 
 footer {
-    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
-    font-size: 16px;
-    line-height: 1.5;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 480px) {
+    form {
+      font-size: 16px;
+    }
   }
 
+/* ---------- Form ---------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 80%;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.submit-button a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    .submit-button {
+      margin-top: 60px;
+      width: 80%;
+    }
+  }
